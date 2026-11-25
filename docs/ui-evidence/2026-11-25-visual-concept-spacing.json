@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "change_id": "2026-11-25-visual-concept-spacing",
+  "change_kind": "responsive-layout-and-content",
+  "status": "passed",
+  "requested_visible_change": "Совместить начало содержимого трёх страниц и показать визуальную концепцию, 2D/2,5D/3D и референсы",
+  "expected_visible_delta": "Метки на одинаковом расстоянии от шапки; графика на двух страницах на одной высоте; на карте новый этап и библиотека",
+  "attempt_number": 1,
+  "checked_after_last_edit": true,
+  "candidate_diff_sha256": "2a493dce91ddd4748c06a1fc8a278aeab2cfbbfe8ad8fd7ba331f4db88d94d96",
+  "served_candidate": {
+    "url": "http://127.0.0.1:4190/?view=architecture",
+    "source_ref": "work/pages-build соответствует staged файлам",
+    "fresh_reload": true
+  },
+  "target": {
+    "surface": "/, ?view=architecture, ?view=setup",
+    "state": "RU, верх страниц",
+    "selector_or_slide_id": ".architecture-eyebrow, .film-art",
+    "action": "сравнить позиции относительно шапки на каждой странице"
+  },
+  "must_remain_unchanged": [
+    "RU/EN и навигация",
+    "Дизайн Motion Studio",
+    "Скачивание архива и копирование задания"
+  ],
+  "required_viewports": [
+    "1244x586"
+  ],
+  "observations": [
+    {
+      "viewport": "1244x586",
+      "viewport_source": "Chrome окно пользователя innerWidth/innerHeight 1244x586 DPR 2; кандидат in-app browser с тем же viewport",
+      "before_signature": "header bottom 79.59; eyebrow: guide 270.26, map 151.27, setup 252.34; art guide 252.38, setup 202.38",
+      "after_signature": "header bottom 79.59; все eyebrow 143.59 (gap 64); art guide и setup 150.12; scrollWidth 1244",
+      "observed_visible_result": "На всех трёх страницах одинаковое начало, обе иллюстрации на одной высоте. Карта показывает 9 направлений, 3 глубины и 9 ссылок; архив содержит тот же справочник. Дополнительно проверены 390, 759, 760, 761 и 1280 без горизонтального переполнения.",
+      "delta_visible": true,
+      "target_visible": true,
+      "preserved_invariants_passed": true,
+      "console_errors": []
+    }
+  ],
+  "comparison_review": {
+    "variants_shown": 0,
+    "selected_variant": "",
+    "owner_approval_reference": ""
+  }
+}
